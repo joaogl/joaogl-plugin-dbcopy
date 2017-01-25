@@ -1,41 +1,61 @@
 {
-  "name": "joaogl-plugin-dbcopy",
-  "version": "1.1.0",
-  "description": "Cordova/Phonegap plugin to copy SQLite Database from www directory to app database directory",
+  "name": "joaogl-plugin-copy",
+  "version": "1.1.4",
+  "description": "Cordova Device Plugin",
   "cordova": {
-    "id": "joaogl-plugin-dbcopy",
+    "id": "joaogl-plugin-copy",
     "platforms": [
+      "firefoxos",
+      "tizen",
       "android",
+      "amazon-fireos",
+      "ubuntu",
       "ios",
+      "blackberry10",
+      "wp7",
       "wp8",
+      "windows8",
       "windows",
-      "wp7"
+      "browser",
+      "osx"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joaogl/joaogl-plugin-dbcopy.git"
+    "url": "https://github.com/apache/cordova-plugin-device"
   },
   "keywords": [
-    "sqlite db copy",
+    "cordova",
+    "device",
     "ecosystem:cordova",
+    "cordova-firefoxos",
+    "cordova-tizen",
     "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
     "cordova-ios",
-    "db copy",
-    "cordova sqlite",
-    "database copy",
-    "sqlite database copy"
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-browser",
+    "cordova-osx"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
-  "author": "Rahul Pandey",
-  "license": "Apache 2.0",
-  "bugs": {
-    "url": "https://github.com/joaogl/joaogl-plugin-dbcopy/issues"
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
   },
-  "homepage": "https://github.com/joaogl/joaogl-plugin-dbcopy"
+  "author": "Apache Software Foundation",
+  "license": "Apache-2.0",
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
 }
