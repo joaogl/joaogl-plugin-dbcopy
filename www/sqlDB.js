@@ -15,3 +15,13 @@ exports.copyDbToStorage = function(dbname,location,destination, success,error){
 exports.copyDbFromStorage = function(dbname,location,source, success,error){
   exec(success, error, "sqlDB", "copyDbFromStorage", [dbname, location, source]);
 };
+
+exports.test = function(success,error){
+  exec(success, error, "sqlDB", "test", []);
+};
+
+window.echo = function(str, callback) {
+    exec(callback, function(err) {
+        callback('Nothing to echo.');
+    }, "sqlDB", "echo", [str]);
+};

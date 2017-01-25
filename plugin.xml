@@ -46,13 +46,38 @@
         <source-file src="src/ios/sqlDB.h" />
         <source-file src="src/ios/sqlDB.m" />
     </platform>
-	
-    <platform name="windows">
-        <config-file parent="/*" target="config.xml">
-        </config-file>
 
-        <source-file src="src/wp/sqlDB.h" />
-        <source-file src="src/wp/sqlDB.cpp" />
-    </platform>
+  <!-- wp7 -->
+  <platform name="wp7">
+    <config-file target="config.xml" parent="/*">
+      <feature name="sqlDB">
+        <param name="wp-package" value="sqlDB"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/wp/sqlDB.cs" />
+  </platform>
+
+  <!-- wp7 -->
+  <platform name="wp8">
+    <config-file target="config.xml" parent="/*">
+      <feature name="sqlDB">
+        <param name="wp-package" value="sqlDB"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/wp/sqlDB.cs" />
+  </platform>
+
+  <!-- wp7 -->
+  <platform name="windows">
+    <config-file target="config.xml" parent="/*">
+      <feature name="sqlDB">
+        <param name="wp-package" value="sqlDB"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/wp/sqlDB.cs" />
+  </platform>
 	
 </plugin>

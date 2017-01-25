@@ -6,12 +6,15 @@
     "id": "joaogl-plugin-dbcopy",
     "platforms": [
       "android",
-      "ios"
+      "ios",
+      "wp8",
+      "windows",
+      "wp7"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/an-rahulpandey/joaogl-plugin-dbcopy.git"
+    "url": "https://github.com/joaogl/joaogl-plugin-dbcopy.git"
   },
   "keywords": [
     "sqlite db copy",
@@ -32,7 +35,7 @@
   "author": "Rahul Pandey",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/an-rahulpandey/joaogl-plugin-dbcopy/issues"
+    "url": "https://github.com/joaogl/joaogl-plugin-dbcopy/issues"
   },
-  "homepage": "https://github.com/an-rahulpandey/joaogl-plugin-dbcopy"
+  "homepage": "https://github.com/joaogl/joaogl-plugin-dbcopy"
 }
